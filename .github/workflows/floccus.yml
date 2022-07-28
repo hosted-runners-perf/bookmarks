@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   php:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     env:
       SELENIUM_HUB_HOST: hub
@@ -37,7 +37,7 @@ jobs:
         browsers: ['firefox']
 
 
-    name: floccus@${{matrix.floccus-ref}} ${{matrix.floccus-adapter}}:${{ matrix.test-name}} ${{matrix.browsers}} nc@${{matrix.server-versions}}
+    name: floccus@${{matrix.floccus-ref}} ${{ matrix.test-name}}
 
     services:
       hub:
