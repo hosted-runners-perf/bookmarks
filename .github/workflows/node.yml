@@ -6,12 +6,7 @@
 name: Node
 
 on:
-  pull_request:
-  push:
-    branches:
-      - main
-      - master
-      - stable*
+  workflow_dispatch:
 
 permissions:
   contents: read
